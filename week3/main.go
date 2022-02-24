@@ -4,15 +4,16 @@ import (
 	"fmt"
 )
 
+
 func main() {
 	fmt.Println("Choose a card from 1 to 14, and a suit for that card")
 	fmt.Println("Suits are as following: 4,3,2,1")
-	cardGame(36, 4, 16, 0)
+	compareCards(5, 4, 11, 4)
 }
 
-func cardGame(cOneVal int, cOneSuit int, cTwoVal int, cTwoSuit int) int {
-	isValidCard := cOneVal > 1 && cOneVal < 15 || cTwoVal > 1 && cTwoVal < 15
-	isValidSuit := cOneSuit > 0 && cOneSuit < 5 || cOneVal > 0 && cOneVal < 5
+func compareCards(cOneVal int, cOneSuit int, cTwoVal int, cTwoSuit int) int {
+	isValidCard := (cOneVal > 1 && cOneVal < 15) && (cTwoVal > 1 && cTwoVal < 15)
+	isValidSuit := (cOneSuit > 0 && cOneSuit < 5) && (cTwoSuit > 0 && cTwoSuit < 5)
 	if isValidCard && isValidSuit {
 		if cOneVal > cTwoVal && cOneSuit > cTwoSuit {
 			fmt.Println("Card one has won")
@@ -22,7 +23,7 @@ func cardGame(cOneVal int, cOneSuit int, cTwoVal int, cTwoSuit int) int {
 			return (-1)
 		} else {
 			fmt.Println("The game is even")
-			return (2)
+			return (0)
 		}
 
 	} else {
