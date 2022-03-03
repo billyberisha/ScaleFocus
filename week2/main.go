@@ -40,5 +40,6 @@ func groupSlices(keySlice[]string, valueSlice[int]) map[string][]int {
 		mapCities[key] = append(mapCities[key], valueSlice[i])
 	}
 	return mapCities
+	
 }
 
