@@ -33,7 +33,7 @@ func citiesAndPrices() ([]string, []int) {
 }
 
 
-func groupSlices(keySlice[]string, valueSlice[int]) map[string][]int {
+func groupSlices(keySlice []string, valueSlice[int]) map[string][]int {
 
 	var mapCities = make(map[string][]int)
 	for i, key := range keySlice{
