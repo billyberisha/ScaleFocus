@@ -1,6 +1,6 @@
 package carddraw
 
-import cardgame "golang/Lecture8/cardGame"
+import cardgame "ScaleFocus/Lecture8/cardGame"
 
 type dealer interface {
 	Deal() *cardgame.Card
