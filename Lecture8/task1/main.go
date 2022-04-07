@@ -1,9 +1,9 @@
 package main
 
 import (
+	carddraw "ScaleFocus/Lecture8/cardDraw"
+	cardgame "ScaleFocus/Lecture8/cardGame"
 	"fmt"
-	carddraw "golang/Lecture8/cardDraw"
-	cardgame "golang/Lecture8/cardGame"
 )
 
 func main() {
